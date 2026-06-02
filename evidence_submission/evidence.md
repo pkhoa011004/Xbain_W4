@@ -312,37 +312,3 @@ Better screenshot to capture:
 Question: Is PaymentGW within its latency SLA?
 File: screenshots/Bonus A Observability Dashboard screenshot.png
 ```
-
-## Bonus B - Monitoring Tool Service
-
-Status: Architecture screenshot captured.
-
-![Bonus B Metrics Tool Lambda](screenshots/lambda%20phu.png)
-
-Needed if submitting Bonus B:
-
-```text
-screenshots/Bonus B Monitoring API CloudWatch screenshot.png
-screenshots/Bonus B Reasoning Report screenshot.png
-```
-
-## Bonus C - Knowledge Base Sync
-
-Status: S3 and KB setup captured. CloudWatch ingestion screenshot missing.
-
-![Bonus C S3 Upload](screenshots/upload%20md.png)
-
-![Bonus C Bedrock KB Setup](screenshots/Setup%20KB.png)
-
-Needed:
-
-```text
-screenshots/Bonus C CloudWatch Start Ingestion screenshot.png
-```
-
-Expected CloudWatch:
-
-```text
-STARTING KNOWLEDGE BASE INGESTION
-```
-

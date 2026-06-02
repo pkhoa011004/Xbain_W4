@@ -86,17 +86,6 @@
   - Must show SLA Tool + Metrics Tool.
   - Suggested file: `screenshots/Bonus A Observability Dashboard screenshot.png`
 
-- [ ] Bonus B Monitoring API reasoning screenshots
-  - Current Lambda architecture is already captured in `screenshots/lambda phu.png`.
-  - Still capture a CloudWatch/API call or frontend reasoning report if submitting Bonus B.
-  - Suggested files:
-    - `screenshots/Bonus B Monitoring API CloudWatch screenshot.png`
-    - `screenshots/Bonus B Reasoning Report screenshot.png`
-
-- [ ] Bonus C KB Sync CloudWatch screenshot
-  - S3 upload and Bedrock KB setup are already captured.
-  - Still capture: `screenshots/Bonus C CloudWatch Start Ingestion screenshot.png`
-
 ## Before Submitting
 
 - [ ] Latest FE is rebuilt/deployed after the L2 badge fix.
