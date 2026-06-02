@@ -9,6 +9,14 @@ CloudFront/S3 FE -> API Gateway -> Chatbot_Orchestrator Lambda
 -> Bedrock KB + SQLite Tools + Monitoring API + Memory
 ```
 
+Why this design:
+
+```text
+I use Bedrock Knowledge Base for L1/L2 because it is best for document Q&A.
+I use SQLite/CSV and Monitoring API tools for L3 because structured data should be queried directly.
+I use session memory for L4 so follow-up questions can reuse the previous service context.
+```
+
 ## 0. Setup / Architecture
 
 ### 0.1 S3 Knowledge Documents
