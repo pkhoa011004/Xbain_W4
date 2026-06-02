@@ -1,0 +1,6 @@
+{
+  "typescript.tsdk": "FE/node_modules/typescript/lib",
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
+}

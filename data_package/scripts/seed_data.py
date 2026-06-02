@@ -65,6 +65,15 @@ CREATE_STATEMENTS = {
             UNIQUE(date, service)
         )
     """,
+    "conversation_memory": """
+        CREATE TABLE IF NOT EXISTS conversation_memory (
+            session_id   TEXT NOT NULL,
+            memory_key   TEXT NOT NULL,
+            memory_value TEXT NOT NULL,
+            updated_at   TEXT NOT NULL,
+            PRIMARY KEY (session_id, memory_key)
+        )
+    """,
 }
 
 POSTGRES_CREATE = {
@@ -116,6 +125,15 @@ POSTGRES_CREATE = {
             UNIQUE(date, service)
         )
     """,
+    "conversation_memory": """
+        CREATE TABLE IF NOT EXISTS conversation_memory (
+            session_id   VARCHAR(128) NOT NULL,
+            memory_key   VARCHAR(128) NOT NULL,
+            memory_value TEXT NOT NULL,
+            updated_at   TIMESTAMP NOT NULL,
+            PRIMARY KEY (session_id, memory_key)
+        )
+    """,
 }
 
 INSERTS = {
@@ -165,6 +183,8 @@ def seed_sqlite(sqlite_path: str):
         cur.executemany(sql, params)
         totals[table] = len(params)
 
+    totals["conversation_memory"] = 0
+
     conn.commit()
     conn.close()
     return totals
@@ -190,6 +210,8 @@ def seed_postgres(db_url: str):
         params = [row_fn(r) for r in rows]
         cur.executemany(sql, params)
         totals[table] = len(params)
+
+    totals["conversation_memory"] = 0
 
     conn.commit()
     cur.close()
