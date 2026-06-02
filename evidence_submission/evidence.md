@@ -13,9 +13,7 @@ CloudFront/S3 FE -> API Gateway -> Chatbot_Orchestrator Lambda
 
 ### 0.1 S3 Knowledge Documents
 
-Screenshot:
-
-- `screenshots/upload md.png`
+![S3 Knowledge Documents](screenshots/upload%20md.png)
 
 Evidence:
 
@@ -25,9 +23,7 @@ S3 bucket contains Markdown KB documents used by Bedrock KB.
 
 ### 0.2 Bedrock Knowledge Base
 
-Screenshot:
-
-- `screenshots/Setup KB.png`
+![Bedrock Knowledge Base Setup](screenshots/Setup%20KB.png)
 
 Evidence:
 
@@ -40,9 +36,7 @@ Data source: S3
 
 ### 0.3 Main Lambda
 
-Screenshot:
-
-- `screenshots/lambda chinh.png`
+![Main Lambda Chatbot Orchestrator](screenshots/lambda%20chinh.png)
 
 Evidence:
 
@@ -52,9 +46,7 @@ Chatbot_Orchestrator handles API Gateway requests, S3 trigger, Bedrock KB, SQLit
 
 ### 0.4 Metrics Tool Lambda
 
-Screenshot:
-
-- `screenshots/lambda phu.png`
+![Metrics Tool Lambda](screenshots/lambda%20phu.png)
 
 Evidence:
 
@@ -80,10 +72,9 @@ Result:
 Alex Chen is the Team Platform lead.
 ```
 
-Screenshots:
+![L1 Team Platform Lead Frontend](screenshots/L1%20Evidence%201.1%20frontend%20screenshot.png)
 
-- `screenshots/L1 Evidence 1.1 frontend screenshot.png`
-- `screenshots/L1 Evidence CloudWatch screenshot.png`
+![L1 CloudWatch](screenshots/L1%20Evidence%20CloudWatch%20screenshot.png)
 
 CloudWatch:
 
@@ -107,10 +98,9 @@ Result:
 1,000 requests per minute per merchant API key.
 ```
 
-Screenshots:
+![L1 PaymentGW API Rate Limit Frontend](screenshots/L1%20Evidence%201.2%20frontend%20screenshot.png)
 
-- `screenshots/L1 Evidence 1.2 frontend screenshot.png`
-- `screenshots/L1 Evidence CloudWatch screenshot.png`
+![L1 CloudWatch](screenshots/L1%20Evidence%20CloudWatch%20screenshot.png)
 
 CloudWatch:
 
@@ -136,10 +126,9 @@ Result:
 No. Deployment freeze is Friday 18:00 to Monday 08:00, except approved P1 hotfixes.
 ```
 
-Screenshots:
+![L2 Friday Deployment Frontend](screenshots/L2%20Evidence%202.1%20frontend%20screenshot.png)
 
-- `screenshots/L2 Evidence 2.1 frontend screenshot.png`
-- `screenshots/L2 Evidence CloudWatch screenshot.png`
+![L2 CloudWatch](screenshots/L2%20Evidence%20CloudWatch%20screenshot.png)
 
 CloudWatch:
 
@@ -181,10 +170,9 @@ Result:
 PaymentGW had the highest total cost in March 2026 at $7,500.
 ```
 
-Screenshots:
+![L3 Cost Tool Frontend Dashboard](screenshots/L3%20Cost%20Tool%20frontend%20screenshot.png)
 
-- `screenshots/L3 Cost Tool frontend screenshot.png`
-- `screenshots/L3 Cost Tool CloudWatch screenshot.png`
+![L3 Cost Tool CloudWatch](screenshots/L3%20Cost%20Tool%20CloudWatch%20screenshot.png)
 
 Dashboard:
 
@@ -277,10 +265,9 @@ METRICS_TOOL_URL=...
 
 Status: Current screenshots only prove Turn 1 memory save. Full 4-turn flow needs retake.
 
-Current screenshots:
+![L4 Current Conversation Screenshot](screenshots/L4%204-turn%20conversation%20screenshots.png)
 
-- `screenshots/L4 4-turn conversation screenshots.png`
-- `screenshots/L4 CloudWatch memory loadsave screenshots.png`
+![L4 CloudWatch Memory Save](screenshots/L4%20CloudWatch%20memory%20loadsave%20screenshots.png)
 
 Current proof:
 
@@ -311,9 +298,7 @@ USING BEDROCK KNOWLEDGE BASE
 
 Status: Partially captured in L3 Cost screenshot.
 
-Current screenshot:
-
-- `screenshots/L3 Cost Tool frontend screenshot.png`
+![Bonus A Current Dashboard Evidence](screenshots/L3%20Cost%20Tool%20frontend%20screenshot.png)
 
 Shows:
 
@@ -332,9 +317,7 @@ File: screenshots/Bonus A Observability Dashboard screenshot.png
 
 Status: Architecture screenshot captured.
 
-Screenshot:
-
-- `screenshots/lambda phu.png`
+![Bonus B Metrics Tool Lambda](screenshots/lambda%20phu.png)
 
 Needed if submitting Bonus B:
 
@@ -347,10 +330,9 @@ screenshots/Bonus B Reasoning Report screenshot.png
 
 Status: S3 and KB setup captured. CloudWatch ingestion screenshot missing.
 
-Screenshots:
+![Bonus C S3 Upload](screenshots/upload%20md.png)
 
-- `screenshots/upload md.png`
-- `screenshots/Setup KB.png`
+![Bonus C Bedrock KB Setup](screenshots/Setup%20KB.png)
 
 Needed:
 
